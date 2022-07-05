@@ -276,7 +276,8 @@ img {
 }
 
 .about__img img {
-    width: 200px;
+    width: 300px;
+    height: 200px;
     border-radius: 0.5rem;
 }
 
@@ -384,32 +385,37 @@ img {
     font-family: var(--body-font);
     box-sizing: border-box;
 }
+
 .contact__container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .contact1 {
     width: 1000px;
     position: relative;
     display: flex;
     justify-content: space-between;
 }
+
 .contact1 .card {
     position: relative;
     width: 480px;
     height: 300px;
 }
+
 .contact1 .card .face {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    transition: 0.5s;
+    transition: 1.5s;
 }
+
 .contact1 .card .face.face1 {
-    background: rgb(236, 233, 233);
+    background: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: cetner;
@@ -417,32 +423,38 @@ img {
     z-index: 1;
     transform-origin: bottom;
 }
+
 .contact1 .card .face.face1 img {
     padding-top: 10px;
     max-width: 280px;
 }
+
 .contact1 .card .face.face1 h3 {
     margin: 10px 0 0;
     color: #fff;
     text-align: center;
     font-size: 1.5em;
 }
+
 .contact1 .card:hover .face.face1 {
     transform: translateY(-100%) rotateX(90deg);
     background-color: #ff0057;
 }
+
 .contact1 .card .face.face2 {
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 3em;
     padding: 20px;
     transform-origin: top;
-    transform: translateY(100%) rotateX(90deg);
+    transform: translateY(0%) rotateX(90deg);
 }
+
 .contact1 .card:hover .face.face2 {
     transform: translateY(0) rotateX(0deg);
-} 
+}
 
 /* footer */
 .footer {
